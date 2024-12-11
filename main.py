@@ -44,7 +44,7 @@ async def translate_text(req: TranslationRequest):
 
 
 @app.get("/api/verify")
-async def verify(req: TranslationRequest):
+async def verify():
   
 
     return {"status": "Working"}
