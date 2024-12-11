@@ -41,3 +41,10 @@ async def translate_text(req: TranslationRequest):
     translated_text = tokenizer.decode(translated_tokens[0], skip_special_tokens=True)
 
     return {"original": req.text, "translated": translated_text}
+
+
+@app.get("/api/verify")
+async def verify(req: TranslationRequest):
+  
+
+    return {"status": "Working"}
